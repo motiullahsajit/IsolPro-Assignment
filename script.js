@@ -42,17 +42,33 @@ bannerImgs.map(bannerimg => {
 
 
 const hotDeals = document.getElementById('hot-deals');
-productsData.map(hotDealsProduct => {
-    const { title, category, price, image } = hotDealsProduct;
-    const product = document.createElement('div');
-    product.className = 'col-lg-2 col-md-4 col-sm-12';
-    product.innerHTML = `<div class="card">
+productsData.map(product => {
+    const { title, category, price, image } = product;
+    const productCard = document.createElement('div');
+    productCard.className = 'col-lg-2 col-md-4 col-sm-12';
+    productCard.innerHTML = `<div class="card">
     <img src=${image} class="card-img-top w-100" alt=${title}>
     <div class="card-body">
       <h6 class="card-title">${category}</h6>
       <h6 class="card-title">${title}</h6>
-      <h5 class="card-title">${price}</h5>
+      <h5 class="card-title"> $ ${price}</h5>
     </div>
   </div>`;
-    hotDeals.appendChild(product);
+    hotDeals.appendChild(productCard);
+});
+
+const newArrivals = document.getElementById('new-arrivals');
+productsData.map(product => {
+    const { title, category, price, image } = product;
+    const productCard = document.createElement('div');
+    productCard.className = 'col-lg-2 col-md-4 col-sm-12';
+    productCard.innerHTML = `<div class="card">
+    <img src=${image} class="card-img-top w-100" alt=${title}>
+    <div class="card-body">
+      <h6 class="card-title">${category}</h6>
+      <h6 class="card-title">${title}</h6>
+      <h5 class="card-title"> $ ${price}</h5>
+    </div>
+  </div>`;
+  newArrivals.appendChild(productCard);
 });
