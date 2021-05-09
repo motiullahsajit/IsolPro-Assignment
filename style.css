@@ -1,0 +1,9 @@
+.slider{
+    background-color: #F7F7F7;
+}
+.carousel-indicators [data-bs-target] {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    background-color: black !important;
+}
