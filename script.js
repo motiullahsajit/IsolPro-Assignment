@@ -84,7 +84,7 @@ const accessoriesData = [{
 {
     category: 'Demo category',
     name: 'Dummy Product Name',
-    image: 'images/accessories7.jpg',
+    image: 'images/accessories6.jpg',
     price: 79.00
 },
 {
@@ -151,8 +151,8 @@ categoriesData.map(category => {
 });
 
 const featuredAccessory = document.getElementById('featured-accessory')
-featuredAccessory.innerHTML = ` <div class="card">
-<img src="images/accessories1.jpg" class="card-img-top" alt="accessory img">
+featuredAccessory.innerHTML = ` <div class="card mb-3">
+<img src="images/accessories1.jpg" class="card-img-top w-100 img-fluid" alt="accessory img">
 <div class="card-body">
     <h6 class="card-name">Accessories</h6>
     <h5 class="card-name">Dummy Product Name</h5>
@@ -173,8 +173,8 @@ const accessories = document.getElementById('accessories');
 accessoriesData.map(accessory => {
     const { name, category, price, image } = accessory;
     const accessoryCard = document.createElement('div');
-    accessoryCard.className = 'col-lg-4 col-md-6 col-sm-12';
-    accessoryCard.innerHTML = `<div class="card mb-2">
+    accessoryCard.className = 'col-lg-4 col-md-6 col-sm-12 mb-2 mx-auto';
+    accessoryCard.innerHTML = `<div class="card">
     <img src=${image} class="card-img-top w-100" alt=${name}>
     <div class="card-body">
       <h6 class="card-name">${category}</h6>
