@@ -10,3 +10,13 @@
 .popular-categories{
     background-color: #F7F7F7;
 }
+
+.hover-style:hover{
+    border: 3px solid #ffc107;
+}
+.text-brand{
+    color: #E75631;
+}
+.ratings{
+    color: goldenrod;
+}
